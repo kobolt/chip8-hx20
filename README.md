@@ -10,6 +10,9 @@ This project builds a [CHIP-8](https://en.wikipedia.org/wiki/CHIP-8) interpreter
 * Timer (OCF) interrupt is not used since it interferes with keyboard scanning.
 * The interpreter and CHIP-8 programs are loaded into memory with the built-in MONITOR.
 
+## Demo Video
+[Epson HX-20 CHIP-8 Interpreter](https://www.youtube.com/watch?v=qs1cFOF7RIY)
+
 ## Memory Map
 | Start  | End    | Usage              |
 | ------ | ------ | ------------------ |

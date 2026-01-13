@@ -50,53 +50,7 @@ This can be somewhat alleviated by increasing this constant from 500 to 10000 an
 ```
 
 ## Transfer to a Real Epson HX-20
-One method is to use the external cassette interface by playing audio files from a PC. The hex20 emulator can be used to convert an S-record to a WAV file.
-
-### Interpreter WAV File
-Start the emulator with the S-record as an argument:
-```sh
-hex20 -s chip8.srec
-```
-Once S-record loading has finished, from the MONITOR type:
-```
-A
-1000
-18FF
-/
-```
-Enter the debugger with Ctrl+C and type:
-```
-f chip8.wav
-c
-```
-From the MONITOR type:
-```
-W C,CHIP8.BIN
-```
-Once "Ok" appears, enter the debugger again and quit with 'q'. The file "chip8.wav" has been created.
-
-### HX-20 Logo Test Program WAV File
-Start the emulator with the S-record as an argument:
-```sh
-hex20 -s hx20-logo.srec
-```
-Once S-record loading has finished, from the MONITOR type:
-```
-A
-1B00
-1CFF
-/
-```
-Enter the debugger with Ctrl+C and type:
-```
-f hx20-logo.wav
-c
-```
-From the MONITOR type:
-```
-W C,LOGO.BIN
-```
-Once "Ok" appears, enter the debugger again and quit with 'q'. The file "hx20-logo.wav" has been created.
+Preferred method is to use the external cassette interface by playing audio WAV files from a PC. The included "bin2hxwav" C program converts binary files to HX-20 compatible audio files.
 
 ### Loading on an Epson HX-20
 Connect an audio cable from a PC to the "Ear" input.

@@ -10,8 +10,12 @@ This project builds a [CHIP-8](https://en.wikipedia.org/wiki/CHIP-8) interpreter
 * Timer (OCF) interrupt is not used since it interferes with keyboard scanning.
 * The interpreter and CHIP-8 programs are loaded into memory with the built-in MONITOR.
 
-## Demo Video
-[Epson HX-20 CHIP-8 Interpreter](https://www.youtube.com/watch?v=qs1cFOF7RIY)
+## Additional Information
+Video:
+* [Epson HX-20 CHIP-8 Interpreter](https://www.youtube.com/watch?v=qs1cFOF7RIY)
+Blog:
+* [CHIP-8 Interpreter for Epson HX-20](https://kobolt.github.io/article-267.html)
+* [Epson HX-20 Binary WAV File Creator](https://kobolt.github.io/article-268.html)
 
 ## Memory Map
 | Start  | End    | Usage              |
@@ -72,7 +76,7 @@ A
 R C,*.*
 ```
 Play back the "hx20-logo.wav" file from the PC to load that CHIP-8 program.
-Note that the second parameter to the "A" command is the end location and dependent on the program size, so it may change with other programs.
+Note that the second parameter to the "A" command is the end location, this can be replaced with FFFF for other programs if that address is not known.
 Once "Ok" appears, start execution:
 ```
 G1000

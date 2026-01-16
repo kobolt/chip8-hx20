@@ -13,6 +13,7 @@ This project builds a [CHIP-8](https://en.wikipedia.org/wiki/CHIP-8) interpreter
 ## Additional Information
 Video:
 * [Epson HX-20 CHIP-8 Interpreter](https://www.youtube.com/watch?v=qs1cFOF7RIY)
+
 Blog:
 * [CHIP-8 Interpreter for Epson HX-20](https://kobolt.github.io/article-267.html)
 * [Epson HX-20 Binary WAV File Creator](https://kobolt.github.io/article-268.html)
